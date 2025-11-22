@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio — Home</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+
+  <!-- ===== HEADER ===== -->
+<header class="site-header glass-header">
+  <div class="container header-inner">
+
+  <!-- BRAND -->
+    <div class="brand">
+     <a href="index.html" class="brand-link">
+    <img src="img/profile/profile2.jpg" alt="Profile" class="brand-img">
+    <span class="brand-name">My Portfolio</span>
+  </a>
+</div>
+
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+
+    </div>
+  </div>
+</header>
+
+<script>
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".glass-header");
+  header.classList.toggle("scrolled", window.scrollY > 10);
+});
+</script>
+
+
+  <!-- ===== HERO SECTION ===== -->
+  <main>
+  <section class="hero">
+  <div class="hero-content">
+    
+    <!-- Left column: text -->
+    <div class="hero-text">
+      <h1 class="hero-name">Hannah Mae Yecyec</h1>
+      
+      <p class="hero-role">
+        <span class="role-prefix">I'm a </span>
+        <span class="typed" data-typed-items="Designer, Developer, Creative, Innovator">Designer</span>
+        <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+      </p>
+
+      <p class="hero-subtext">
+        Crafting stunning digital experiences with a passion for innovation, design excellence, and cutting-edge technology. Let's bring your vision to life.
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">10+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">5+</span>
+          <span class="stat-label">Skills</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">Dedicated</span>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn btn-primary btn-with-icon">
+          <i class="fa-solid fa-arrow-right"></i> View My Work
+        </a>
+        <a href="contact.html" class="btn btn-secondary btn-with-icon">
+          <i class="fa-solid fa-envelope"></i> Get In Touch
+        </a>
+      </div>
+    </div>
+
+    <!-- Right column: image -->
+    <div class="hero-image">
+      <div class="image-container">
+        <div class="image-frame">
+          <img src="img/profile/profile_1.jpg" alt="Profile Image" class="hero-img-main">
+        </div>
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ===== HIGHLIGHT CARDS ===== -->
+    <section class="highlights section">
+      <div class="container highlights-grid">
+        <div class="highlight-card">
+          <i class="fa-solid fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+          <p>Creating visually appealing and user-friendly interfaces.</p>
+        </div>
+        <div class="highlight-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Building responsive and interactive websites using modern technologies.</p>
+        </div>
+        <div class="highlight-card">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h3>Mobile Apps</h3>
+          <p>Designing and developing functional mobile applications.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="services section">
+      <h2 class="section-title">What I Offer</h2>
+      <div class="container services-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-paintbrush"></i>
+          <h3>Graphic Design</h3>
+          <p>Creating modern, clean visuals for branding and marketing.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Developing responsive websites with HTML, CSS, JS, and more.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h3>Mobile Apps</h3>
+          <p>Designing functional apps for Android and iOS platforms.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-pen-ruler"></i>
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive user interfaces and seamless experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS PREVIEW ===== -->
+    <section class="projects-preview section">
+      <h2 class="section-title">Recent Projects</h2>
+      <div class="projects-grid container">
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="img/projects/octo.png" alt="Web Design Project">
+          </div>
+          <div class="project-info">
+            <h3>OCTO</h3>
+            <p>Interactive platform showcasing OCTO services.</p>
+            <div class="project-tags"><span class="tag">UI</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="img/projects/saloonapp.png" alt="UI/UX Project">
+          </div>
+          <div class="project-info">
+            <h3>Saloon App</h3>
+            <p>CBook salon services and manage appointments.</p>
+            <div class="project-tags"><span class="tag">Figma</span><span class="tag">Prototype</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="img/projects/WebDesign1.png" alt="Web App Project">
+          </div>
+          <div class="project-info">
+            <h3>Digital Agency</h3>
+            <p>Professional site highlighting agency projects.</p>
+            <div class="project-tags"><span class="tag">React</span><span class="tag">API</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="img/projects/dailyexpense.jpg" alt="E‑commerce Landing Project">
+          </div>
+          <div class="project-info">
+            <h3>Daily Expense App</h3>
+            <p>Track daily expenses and budgets easily.</p>
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">UX</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-cta" style="text-align:center; margin-top:22px;">
+        <a href="projects.html" class="btn">View All Projects</a>
+      </div>
+    </section>
+
+   <!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials section">
+  <h2 class="section-title">Testimonials</h2>
+  <div class="testimonials-wrapper">
+    <div class="testimonials-scroll">
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="img/testimonial/Dr.Olivia Bennett.jpg" alt="Jane" class="testimonial-img">
+        <p>"Hannah is an incredibly talented designer and developer. Highly recommended!"</p>
+        <h4>Dr. Olivia Bennett</h4>
+        <span class="role">Academic Director</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="img/testimonial/Prof.William Carter.jpg" alt="Mark" class="testimonial-img">
+        <p>"Her work on our website exceeded expectations. Truly professional."</p>
+        <h4>Prof. William Carter</h4>
+        <span class="role">Project Lead</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="img/testimonial/Dr.Liam Harrison.jpg" alt="Alex" class="testimonial-img">
+        <p>"Creative, detail-oriented, and amazing to work with."</p>
+        <h4>Dr. Liam Harrison</h4>
+        <span class="role">Consultant</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="img/testimonial/Prof.Emma Caldwell.jpg" alt="Sarah" class="testimonial-img">
+        <p>"Hannah's designs are always top-notch and very modern."</p>
+        <h4>Prof. Emma Caldwell</h4>
+        <span class="role">Design Head</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="img/testimonial/Mr.Noah Sullivan.jpg" alt="Liam" class="testimonial-img">
+        <p>"Very reliable, communicates well, and delivers great results."</p>
+        <h4>Mr. Noah Sullivan</h4>
+        <span class="role">Business Partner</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="img/testimonial/Ms.Ava Richardson.jpg" alt="Emma" class="testimonial-img">
+        <p>"A brilliant mind for UX design and web solutions."</p>
+        <h4>Ms. Ava Richardson</h4>
+        <span class="role">UI/UX Manager</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="img/testimonial/Dr.Alexander Pierce.jpg" alt="Noah" class="testimonial-img">
+        <p>"Extremely professional, with a creative touch that stands out."</p>
+        <h4>Dr. Alexander Pierce</h4>
+        <span class="role">Innovation Lead</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="img/testimonial/Dr.Sophia Hayes.jpg" alt="Olivia" class="testimonial-img">
+        <p>"Always goes above and beyond, delivering exceptional results."</p>
+        <h4>Dr. Sophia Hayes</h4>
+        <span class="role">Project Director</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="img/testimonial/Ms.Isabella Montgomery.jpg" alt="William" class="testimonial-img">
+        <p>"Her design solutions are innovative, practical, and beautiful."</p>
+        <h4>Ms. Isabella Montgomery</h4>
+        <span class="role">Creative Director</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="img/testimonial/Mr.James Whitman.jpg" alt="Ava" class="testimonial-img">
+        <p>"Working with Hannah is a seamless experience. Highly recommend!"</p>
+        <h4>Mr. James Whitman</h4>
+        <span class="role">CEO</span>
+      </div>
+  </div>
+</section>
+
+  </main>
+
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Scroll to top" style="position:fixed;right:18px;bottom:24px;display:none;z-index:999;background:linear-gradient(135deg,#6d28d9,#a855f7);color:#fff;border:none;border-radius:50%;width:48px;height:48px;box-shadow:0 4px 16px rgba(109,40,217,0.18);cursor:pointer;align-items:center;justify-content:center;font-size:22px;transition:opacity .3s;">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 | Created by <strong>Hannah</strong> | BSIT 1C</p>
+  </footer>
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    const typedElement = document.querySelector('.typed');
+    const words = typedElement.getAttribute('data-typed-items').split(', ');
+
+    new Typed('.typed', {
+      strings: words,
+      typeSpeed: 80,
+      backSpeed: 50,
+      backDelay: 1500,
+      loop: true,
+      smartBackspace: true
+    });
+  </script>
+
+  <script>
+    // Scroll to top button
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        backToTop.style.display = 'flex';
+        backToTop.style.opacity = '1';
+      } else {
+        backToTop.style.opacity = '0';
+        setTimeout(() => { backToTop.style.display = 'none'; }, 300);
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+  <script src="scripts.js"></script>
+
+</body>
+</html>

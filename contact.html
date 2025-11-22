@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me — Hannah's Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+
+  <!-- ===== HEADER ===== -->
+<header class="site-header glass-header">
+  <div class="container header-inner">
+
+  <!-- BRAND -->
+    <div class="brand">
+     <a href="index.html" class="brand-link">
+    <img src="img/profile/profile2.jpg" alt="Profile" class="brand-img">
+    <span class="brand-name">My Portfolio</span>
+  </a>
+</div>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+
+    </div>
+  </div>
+</header>
+
+<script>
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".glass-header");
+  header.classList.toggle("scrolled", window.scrollY > 10);
+});
+
+// Back to Top Button
+const backToTop = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    backToTop.style.display = 'flex';
+  } else {
+    backToTop.style.display = 'none';
+  }
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <main>
+    <section class="contact-section fade-in">
+      <div class="container">
+        <h1 class="section-title">Get In Touch</h1>
+        <p class="section-subtitle">Have a project in mind? Let's collaborate and create something amazing together.</p>
+
+        <div class="contact-wrapper">
+          <!-- LEFT CARD (CONTACT DETAILS) -->
+          <div class="contact-card contact-info-card animate-left delay-1">
+            <div class="card-header">
+              <i class="fa-solid fa-address-book"></i>
+              <h2>Contact Information</h2>
+            </div>
+
+            <div class="info-box">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:09651761829">09651761829</a></p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:hannahmaepyecyec@gmail.com">hannahmaepyecyec@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Managok, Malaybalay City, Bukidnon, Philippines</p>
+              </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="availability-box">
+              <h3><i class="fa-solid fa-clock"></i> Availability</h3>
+              <ul class="availability-list">
+                <li><i class="fa-solid fa-check"></i> Website Development</li>
+                <li><i class="fa-solid fa-check"></i> UI/UX Design</li>
+                <li><i class="fa-solid fa-check"></i> Graphic Design</li>
+                <li><i class="fa-solid fa-check"></i> Freelance Projects</li>
+              </ul>
+            </div>
+
+            <hr class="divider">
+
+            <div class="work-hours">
+              <h3><i class="fa-solid fa-calendar"></i> Work Hours</h3>
+              <ul class="hours-list">
+                <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</li>
+                <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM</li>
+                <li><strong>Sunday:</strong> By Appointment</li>
+              </ul>
+              <p class="timezone">Timezone: PH (PHT, UTC+8)</p>
+            </div>
+
+            <hr class="divider">
+
+            <div class="response-time">
+              <h3><i class="fa-solid fa-hourglass-end"></i> Response Time</h3>
+              <p class="response-info">I typically respond within <strong>24-48 hours</strong> during business days. Urgent inquiries may be prioritized.</p>
+            </div>
+
+            <h3 class="social-title"><i class="fa-solid fa-share-nodes"></i> Connect With Me</h3>
+            <div class="social-icons">
+              <a class="social-link fb" href="https://www.facebook.com/hanam1i" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-link tw" href="https://x.com/aczijih" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a class="social-link ig" href="https://www.instagram.com/hnam1i/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a class="social-link ln" href="https://www.linkedin.com/in/hannah-mae-yecyec-383921386/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-link github" href="https://github.com/hannahmaeyecyec" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+              <a class="social-link tk" href="https://www.tiktok.com/@hnam1i" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+             <a class="social-link pinterest" href="https://ph.pinterest.com/hannahmaepyecyec/" title="Pinterest"><i class="fab fa-pinterest"></i>
+</a>
+
+            </div>
+          </div>
+
+          <!-- RIGHT CARD (CONTACT FORM) -->
+          <div class="contact-card form-card animate-right delay-2">
+            <div class="card-header">
+              <i class="fa-solid fa-paper-plane"></i>
+              <h2>Send a Message</h2>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <div class="input-group">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <span class="error-message" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <div class="input-group">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <span class="error-message" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <div class="input-group">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="tel" id="phone" name="phone" placeholder="09XX-XXX-XXXX">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <div class="input-group">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                </div>
+                <span class="error-message" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <div class="input-group textarea-group">
+                  <i class="fa-solid fa-message"></i>
+                  <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <span class="char-count"><span id="charCount">0</span>/500</span>
+                <span class="error-message" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-submit">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+
+              <div class="form-message success-message" id="successMessage">
+                <i class="fa-solid fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+              </div>
+              <div class="form-message error-message-box" id="errorMessage">
+                <i class="fa-solid fa-exclamation-circle"></i> <span id="errorText"></span>
+              </div>
+            </form>
+
+            <!-- MAP -->
+            <div class="map-box fade-in delay-3">
+              <h3><i class="fa-solid fa-map-location"></i> Location</h3>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31518.675!2d125.146!3d8.145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff2c0c9cb149f%3A0x1!2sMalaybalay%20City!5e0!3m2!1sen!2sph!4v1700000000"
+                width="100%" height="350" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Scroll to top" style="position:fixed;right:18px;bottom:24px;display:none;z-index:999;background:linear-gradient(135deg,#6d28d9,#a855f7);color:#fff;border:none;border-radius:50%;width:48px;height:48px;box-shadow:0 4px 16px rgba(109,40,217,0.18);cursor:pointer;align-items:center;justify-content:center;font-size:22px;transition:opacity .3s;">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background: linear-gradient(90deg, #6d28d9 0%, #a855f7 100%); color: #fff; padding: 24px 0; text-align: center;">
+    <p>© 2025 | Created by <strong>Hannah</strong> | BSIT 1C</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>

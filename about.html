@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio — Home</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+
+  <!-- ===== HEADER ===== -->
+<header class="site-header glass-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <a href="index.html" class="brand-link">
+        <img src="img/profile/profile2.jpg" alt="Profile" class="brand-img">
+        <span class="brand-name">My Portfolio</span>
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="about.html" class="active"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </div>
+</header>
+
+<script>
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".glass-header");
+  header.classList.toggle("scrolled", window.scrollY > 10);
+});
+
+// Back to Top Button
+const backToTop = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    backToTop.style.display = 'flex';
+  } else {
+    backToTop.style.display = 'none';
+  }
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <main>
+    <!-- Creative About Hero -->
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <div class="hero-intro">
+          <div class="about-badge">
+            <i class="fa-solid fa-sparkles"></i> About Me
+          </div>
+          <h1 class="hero-title">Hannah Mae <span class="accent-text">Yecyec</span></h1>
+          <p class="hero-subtitle">A passionate Designer & Developer dedicated to creating beautiful, accessible, and responsive digital experiences.</p>
+        </div>
+      </div>
+      <div class="about-hero-bg"></div>
+    </section>
+
+    <!-- Quick Stats Section -->
+    <section class="quick-stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+            <h4>5+</h4>
+            <p>Skills Mastered</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h4>10+</h4>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+            <h4>100%</h4>
+            <p>Dedication</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h4>Bukidnon</h4>
+            <p>Philippines</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Content - Two Column Layout -->
+    <section class="about-content">
+      <div class="container">
+        <div class="about-grid-2col">
+          <!-- Left: Story -->
+          <div class="about-story">
+            <h2>My Story</h2>
+            <p>I'm Hannah Mae, a passionate designer and developer from Bukidnon, Philippines. With a background in Information Technology, I've developed a keen interest in creating beautiful, accessible, and responsive digital experiences.</p>
+            <p>Currently pursuing my BSIT degree at Bukidnon State University, I combine academic knowledge with practical experience to deliver high-quality design and development solutions. My journey in tech has been driven by a desire to innovate and create meaningful digital products.</p>
+            <p>I'm driven by creativity, attention to detail, and a commitment to excellence in everything I do. Whether designing interfaces, developing websites, or building applications, I bring passion and expertise to every project.</p>
+            <a href="contact.html" class="btn btn-primary">Let's Connect</a>
+          </div>
+
+          <!-- Right: Quick Info Card -->
+          <div class="info-cards-grid">
+            <div class="info-card glass-card">
+              <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h3>Education</h3>
+              <p><strong>BSIT</strong><br>Bukidnon State University<br>2025 - Present</p>
+            </div>
+            <div class="info-card glass-card">
+              <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <h3>Location</h3>
+              <p><strong>Bukidnon</strong><br>Malaybalay City<br>Philippines</p>
+            </div>
+            <div class="info-card glass-card">
+              <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h3>Availability</h3>
+              <p><strong>Open</strong><br>Freelance & Collaboration<br>Mon-Fri 9AM-6PM</p>
+            </div>
+            <div class="info-card glass-card">
+              <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+              <h3>Timezone</h3>
+              <p><strong>UTC+8</strong><br>Asia/Manila<br>PHT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-showcase">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-categories">
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-code"></i> Frontend Development</h3>
+            <div class="skill-list">
+              <span class="skill-badge">HTML</span>
+              <span class="skill-badge">CSS</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-vector-square"></i> Design Tools</h3>
+            <div class="skill-list">
+              <span class="skill-badge">Figma</span>
+              <span class="skill-badge">Adobe XD</span>
+              <span class="skill-badge">Photoshop</span>
+              <span class="skill-badge">UI/UX</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fa-brands fa-github"></i> Version Control</h3>
+            <div class="skill-list">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">GitLab</span>
+              <span class="skill-badge">Collaboration</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-palette"></i> Design Skills</h3>
+            <div class="skill-list">
+              <span class="skill-badge">Graphic Design</span>
+              <span class="skill-badge">Branding</span>
+              <span class="skill-badge">Logo Design</span>
+              <span class="skill-badge">Typography</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Timeline Section -->
+    <section class="journey-timeline">
+      <div class="container">
+        <h2 class="section-title">My Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Elementary Education</h3>
+              <p class="timeline-date">2012 - 2019</p>
+              <p>Managok Central School</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>High School</h3>
+              <p class="timeline-date">2019 - 2023</p>
+              <p>Managok National High School • City Scholar</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>College</h3>
+              <p class="timeline-date">2025 - Present</p>
+              <p>Bukidnon State University • BSIT Program</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Professional Growth</h3>
+              <p class="timeline-date">Ongoing</p>
+              <p>Freelance Projects • Continuous Learning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2>Ready to Collaborate?</h2>
+        <p>Let's create something amazing together. Get in touch and let's discuss your next project.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">Start a Project</a>
+          <a href="projects.html" class="btn btn-secondary btn-lg">View My Work</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Scroll to top" style="position:fixed;right:18px;bottom:24px;display:none;z-index:999;background:linear-gradient(135deg,#6d28d9,#a855f7);color:#fff;border:none;border-radius:50%;width:48px;height:48px;box-shadow:0 4px 16px rgba(109,40,217,0.18);cursor:pointer;align-items:center;justify-content:center;font-size:22px;transition:opacity .3s;">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background: linear-gradient(90deg, #6d28d9 0%, #a855f7 100%); color: #fff; padding: 24px 0; text-align: center;">
+    <p>© 2025 | Created by <strong>Hannah</strong> | BSIT 1C</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
