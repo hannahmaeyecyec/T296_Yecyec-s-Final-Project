@@ -499,3 +499,4 @@ document.head.appendChild(style);
 document.addEventListener('DOMContentLoaded', initMobileMenu);
 
 console.log('✨ Hannah\'s Portfolio - JavaScript initialized successfully!');
+

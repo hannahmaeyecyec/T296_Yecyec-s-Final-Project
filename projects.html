@@ -86,20 +86,18 @@ backToTop.addEventListener('click', () => {
           <p>A selection of my best work showcasing design, development, and creative problem-solving.</p>
         </div>
         <div class="project-filters">
-          <button class="active">All</button>
-          <button>Web Design</button>
-          <button>App Dev</button>
-          <button>Branding</button>
-          <button>UI/UX</button>
-          <button>Product</button>
-        </div>
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="webdesign">Web Design</button>
+          <button data-filter="appdev">App Dev</button>
+          <button data-filter="branding">Branding</button>
+          <button data-filter="uiux">UI/UX</button>
+</div>
+
       </div>
 
       <!-- PROJECT GRID -->
       <div class="projects-grid">
-
-        <!-- Project Item Example -->
-        <div class="project-item">
+        <div class="project-item" data-category="webdesign">
           <div class="project-img-wrapper">
             <img src="img/projects/octo.png" alt="Modern Website">
             <div class="overlay">
@@ -116,7 +114,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item" data-category="webdesign">
           <div class="project-img-wrapper">
             <img src="img/projects/WebDesign1.png" alt="Modern Website">
             <div class="overlay">
@@ -133,7 +131,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item" data-category="webdesign">
           <div class="project-img-wrapper">
             <img src="img/projects/webapp1.png" alt="Modern Website">
             <div class="overlay">
@@ -150,7 +148,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-         <div class="project-item">
+         <div class="project-item" data-category="webdesign">
           <div class="project-img-wrapper">
             <img src="img/projects/flycab.png" alt="Modern Website">
             <div class="overlay">
@@ -167,7 +165,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item" data-category="appdev">
           <div class="project-img-wrapper">
             <img src="img/projects/dailyexpense.jpg" alt="Mobile App">
             <div class="overlay">
@@ -184,7 +182,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-         <div class="project-item">
+         <div class="project-item" data-category="appdev">
           <div class="project-img-wrapper">
             <img src="img/projects/abc.png" alt="Mobile App">
             <div class="overlay">
@@ -201,7 +199,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-         <div class="project-item">
+         <div class="project-item" data-category="appdev">
           <div class="project-img-wrapper">
             <img src="img/projects/busbookingapp.png" alt="Mobile App">
             <div class="overlay">
@@ -218,7 +216,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-         <div class="project-item">
+         <div class="project-item" data-category="appdev">
           <div class="project-img-wrapper">
             <img src="img/projects/fitnessapp.png" alt="Mobile App">
             <div class="overlay">
@@ -235,7 +233,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item" data-category="appdev">
           <div class="project-img-wrapper">
             <img src="img/projects/saloonapp.png" alt="UI/UX Design">
             <div class="overlay">
@@ -269,7 +267,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-         <div class="project-item">
+         <div class="project-item" data-category="appdev">
           <div class="project-img-wrapper">
             <img src="img/projects/auroraai.png" alt="UI/UX Design">
             <div class="overlay">
@@ -286,7 +284,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-         <div class="project-item">
+         <div class="project-item" data-category="appdev">
           <div class="project-img-wrapper">
             <img src="img/projects/busbookingapp.png" alt="UI/UX Design">
             <div class="overlay">
@@ -303,7 +301,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-         <div class="project-item">
+         <div class="project-item" data-category="branding">
           <div class="project-img-wrapper">
             <img src="img/projects/mr.frankys.jpg" alt="UI/UX Design">
             <div class="overlay">
@@ -320,7 +318,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item" data-category="branding">
           <div class="project-img-wrapper">
             <img src="img/projects/buisnesslogo1.jpg" alt="UI/UX Design">
             <div class="overlay">
@@ -337,7 +335,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item" data-category="uiux">
           <div class="project-img-wrapper">
             <img src="img/projects/drinkhaus.png" alt="UI/UX Design">
             <div class="overlay">
@@ -354,7 +352,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item" data-category="uiux">
           <div class="project-img-wrapper">
             <img src="img/projects/onlinecourse.png" alt="UI/UX Design">
             <div class="overlay">
@@ -371,7 +369,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item" data-category="uiux">
           <div class="project-img-wrapper">
             <img src="img/projects/aero.png" alt="UI/UX Design">
             <div class="overlay">
@@ -388,7 +386,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item" data-category="branding">
           <div class="project-img-wrapper">
             <img src="img/projects/product-1.jpg" alt="UI/UX Design">
             <div class="overlay">
@@ -405,7 +403,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+       <div class="project-item" data-category="branding">
           <div class="project-img-wrapper">
             <img src="img/projects/product-2.jpg" alt="UI/UX Design">
             <div class="overlay">
@@ -422,7 +420,7 @@ backToTop.addEventListener('click', () => {
           </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-item" data-category="branding">
           <div class="project-img-wrapper">
             <img src="img/projects/product-3.jpg" alt="UI/UX Design">
             <div class="overlay">
@@ -454,6 +452,32 @@ backToTop.addEventListener('click', () => {
   <footer style="background: linear-gradient(90deg, #6d28d9 0%, #a855f7 100%); color: #fff; padding: 24px 0; text-align: center;">
     <p>© 2025 | Created by <strong>Hannah</strong> | BSIT 1C</p>
   </footer>
+
+  <script>
+const filterButtons = document.querySelectorAll(".project-filters button");
+const projects = document.querySelectorAll(".project-item");
+
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    
+    document.querySelector(".project-filters .active").classList.remove("active");
+    btn.classList.add("active");
+
+    const filter = btn.getAttribute("data-filter");
+
+    projects.forEach(project => {
+      const category = project.getAttribute("data-category");
+
+      if (filter === "all" || category === filter) {
+        project.style.display = "block";
+      } else {
+        project.style.display = "none";
+      }
+    });
+
+  });
+});
+</script>
 
 </body>
 </html>
