@@ -1016,10 +1016,14 @@ body.dark .project-tags .tag {
 .projects-cta .btn { 
   background: transparent; 
   border: 2px solid #6d28d9; 
-  color: #ffffff;; 
+  color: #b794f6;; 
   padding: 10px 20px; 
   border-radius: 8px; 
   transition: all .25s ease; 
+}
+
+body.dark .projects-cta .btn { 
+  color: #ffffff;; 
 }
 
 .projects-cta .btn:hover { 
