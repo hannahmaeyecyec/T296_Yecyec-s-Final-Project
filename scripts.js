@@ -1,8 +1,4 @@
-// ========================================
-// HANNAH'S PORTFOLIO - MAIN JAVASCRIPT
-// ========================================
-
-// ===== Smooth Scrolling & Animations =====
+// Smooth Scrolling & Animations 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize all features
   initScrollAnimations();
@@ -14,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTooltips();
 });
 
-// ===== 1. SCROLL ANIMATIONS =====
+// SCROLL ANIMATIONS
 function initScrollAnimations() {
   const observerOptions = {
     threshold: 0.1,
@@ -40,7 +36,7 @@ function initScrollAnimations() {
   });
 }
 
-// ===== 2. FORM VALIDATION & SUBMISSION =====
+// FORM VALIDATION & SUBMISSION 
 function initFormValidation() {
   const contactForm = document.getElementById('contactForm');
   if (!contactForm) return;
@@ -164,7 +160,7 @@ function submitForm() {
   successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
-// ===== 3. CHARACTER COUNTER =====
+// CHARACTER COUNTER
 function initCharacterCounter() {
   const messageField = document.getElementById('message');
   const charCount = document.getElementById('charCount');
@@ -182,7 +178,7 @@ function initCharacterCounter() {
   }
 }
 
-// ===== 4. BACK TO TOP BUTTON =====
+// BACK TO TOP BUTTON 
 function initBackToTop() {
   const backToTop = document.getElementById('back-to-top');
   if (!backToTop) return;
@@ -207,7 +203,7 @@ function initBackToTop() {
   });
 }
 
-// ===== 5. THEME TOGGLE (Light/Dark Mode) =====
+// THEME TOGGLE (Light/Dark Mode) 
 function initThemeToggle() {
   // Check for saved theme preference or system preference
   const savedTheme = localStorage.getItem('theme');
@@ -273,7 +269,7 @@ function initThemeToggle() {
   });
 }
 
-// ===== 6. NAVIGATION ACTIVE STATE =====
+// NAVIGATION ACTIVE STATE 
 function initNavigation() {
   const navLinks = document.querySelectorAll('.main-nav a');
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
@@ -296,14 +292,14 @@ function initNavigation() {
   });
 }
 
-// ===== 7. TOOLTIPS =====
+// TOOLTIPS
 function initTooltips() {
   document.querySelectorAll('[title]').forEach(element => {
     element.style.cursor = 'help';
   });
 }
 
-// ===== 8. SMOOTH REVEAL ON PAGE LOAD =====
+// SMOOTH REVEAL ON PAGE LOAD
 document.addEventListener('DOMContentLoaded', () => {
   document.body.style.opacity = '0';
   setTimeout(() => {
@@ -312,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 100);
 });
 
-// ===== 9. PARALLAX EFFECT (Optional) =====
+// PARALLAX EFFECT (Optional) 
 window.addEventListener('scroll', () => {
   const parallaxElements = document.querySelectorAll('[data-parallax]');
   parallaxElements.forEach(element => {
@@ -321,7 +317,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// ===== 10. KEYBOARD SHORTCUTS =====
+// KEYBOARD SHORTCUTS
 document.addEventListener('keydown', (e) => {
   // Alt + H: Go to home
   if (e.altKey && e.key === 'h') {
@@ -343,7 +339,7 @@ function closeAllModals() {
   });
 }
 
-// ===== 11. LAZY LOADING IMAGES =====
+// LAZY LOADING IMAGES 
 if ('IntersectionObserver' in window) {
   const imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -363,7 +359,7 @@ if ('IntersectionObserver' in window) {
   });
 }
 
-// ===== 12. MOBILE MENU TOGGLE (if needed) =====
+// MOBILE MENU TOGGLE (if needed)
 function initMobileMenu() {
   const menuBtn = document.querySelector('.mobile-menu-btn');
   const nav = document.querySelector('.main-nav');
@@ -384,7 +380,7 @@ function initMobileMenu() {
   }
 }
 
-// ===== 13. COPY TO CLIPBOARD =====
+// COPY TO CLIPBOARD
 function copyToClipboard(text) {
   navigator.clipboard.writeText(text).then(() => {
     showNotification('Copied to clipboard!', 'success');
@@ -418,7 +414,7 @@ function showNotification(message, type = 'info') {
   }, 3000);
 }
 
-// ===== 14. ADD CSS FOR ANIMATIONS =====
+// ADD CSS FOR ANIMATIONS 
 const style = document.createElement('style');
 style.textContent = `
   @keyframes slideInRight {
